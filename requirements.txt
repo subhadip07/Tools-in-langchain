@@ -1,7 +1,9 @@
 langchain 
 langchain-core 
 langchain-community 
-pydantic 
-duckduckgo-search 
+pydantic  
+duckduckgo-search
 langchain_experimental
 ipykernel
+
+ddgs

@@ -203,6 +203,20 @@ wheels = [
 ]
 
 [[package]]
+name = "ddgs"
+version = "9.5.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "click" },
+    { name = "lxml" },
+    { name = "primp" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1e/7d/d0929e3a8f40d977fb6423fb7de80afd513ffacc3d7abf071bcb4e227fc0/ddgs-9.5.1.tar.gz", hash = "sha256:cfb721c1191fe30df648d62564c2acfdcb5035adc9f2ed7985b5c4ef8adb733e", size = 32606, upload-time = "2025-08-01T10:10:00.49Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a3/0a/ecb484ed63f6c3b7444294e7736061b0feaef472feac951924717dbc9156/ddgs-9.5.1-py3-none-any.whl", hash = "sha256:59467b29d92a781bf3aa22fb1bea613c7f8280a0760b4033610f787b472b4109", size = 36342, upload-time = "2025-08-01T10:09:59.582Z" },
+]
+
+[[package]]
 name = "debugpy"
 version = "1.8.15"
 source = { registry = "https://pypi.org/simple" }
@@ -1192,6 +1206,7 @@ name = "tools-in-langchain"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "ddgs" },
     { name = "duckduckgo-search" },
     { name = "ipykernel" },
     { name = "langchain" },
@@ -1203,6 +1218,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "ddgs", specifier = ">=9.5.1" },
     { name = "duckduckgo-search", specifier = ">=8.1.1" },
     { name = "ipykernel", specifier = ">=6.30.0" },
     { name = "langchain", specifier = ">=0.3.27" },
