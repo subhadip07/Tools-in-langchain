@@ -7,3 +7,7 @@ langchain_experimental
 ipykernel
 
 ddgs
+langchain-groq
+groq
+requests
+python-dotenv
